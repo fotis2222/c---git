@@ -1,6 +1,10 @@
 #include <iostream>
+#include <limits>
 
 int main()
 {
-    std::cout << "placeholder"; // placeholder, to replace once i figure out what to do
+    std::cout << "placeholder";
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.get();
 }
